@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,7 +40,11 @@ namespace ConsoleMySQL
                 while (reader.Read())
                 {
                     string desc = reader.GetString(0);
-                    string price = reader.GetString(1);
+
+                    object o = reader.GetValue(1);
+
+                    int price = reader.GetInt32(1);
+                    
                     Console.WriteLine(desc + " " + price);
                 }
         }
