@@ -1,9 +1,8 @@
 ﻿// written by CHris
 // with HELP by:
 //
-//
+// Logan
 
-Logan
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
