@@ -1,4 +1,5 @@
-﻿using System;
+﻿Logan
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -44,7 +45,7 @@ namespace ConsoleMySQL
                     object o = reader.GetValue(1);
 
                     int price = reader.GetInt32(1);
-                    
+
                     Console.WriteLine(desc + " " + price);
                 }
         }
@@ -54,7 +55,7 @@ namespace ConsoleMySQL
             if (tryConnect("DevToolsUser", "DevTools", 3306))
                 tryReadTable();
             Console.WriteLine("All done");
-            Console.ReadLine(); 
+            Console.ReadLine();
         }
     }
 }
