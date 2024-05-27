@@ -1,4 +1,9 @@
-﻿using System;
+﻿// written by CHris
+// with HELP by:
+//
+//
+
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
